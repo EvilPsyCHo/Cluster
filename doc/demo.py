@@ -2,7 +2,7 @@
 # @Time    : 18-9-1 上午10:53
 # @Author  : evilpsycho
 # @Mail    : evilpsycho42@gmail.com
-
+from sklearn.cluster import AffinityPropagation
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
