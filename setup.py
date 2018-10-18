@@ -2,7 +2,7 @@
 # @Time    : 18-10-16 下午6:06
 # @Author  : evilpsycho
 # @Mail    : evilpsycho42@gmail.com
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -12,6 +12,7 @@ setup(
     long_description='An interface-friendly and high-performance cluster analysis framework.',
     author=['Zhirui Zhou'],
     author_email=['evilpsycho42@gmail.com'],
-    packages=['cluster'],
-    package_data={'cluster': ['dataset_for_testing/*.csv']}
+    packages=find_packages(),
+    package_data={'cluster': ['dataset_for_testing/*.csv']},
+    install_requires=['pandas', 'numpy', 'matplotlib', 'scikit-learn']
 )

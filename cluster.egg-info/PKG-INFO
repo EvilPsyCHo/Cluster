@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cluster
+Version: 0.1.0
+Summary: cluster analysis framework
+Home-page: UNKNOWN
+Author: ['Zhirui Zhou']
+Author-email: ['evilpsycho42@gmail.com']
+License: UNKNOWN
+Description: An interface-friendly and high-performance cluster analysis framework.
+Platform: UNKNOWN

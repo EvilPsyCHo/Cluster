@@ -5,6 +5,7 @@
 
 # Based on Partition Cluster Models
 from sklearn.cluster import KMeans, MiniBatchKMeans, AffinityPropagation as AP
+from sklearn.cluster import SpectralClustering
 
 
-__all__ = ["KMeans", "MiniBatchKMeans", "AP"]
+__all__ = ["KMeans", "MiniBatchKMeans", "AP", "SpectralClustering"]
