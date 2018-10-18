@@ -29,3 +29,5 @@
 + Reference
 
 [Brendan J. Frey and Delbert Dueck, "Clustering by Passing MessagesBetween Data Points", Science Feb. 2007]()
+
+https://www.zhihu.com/question/25384514/answer/47636054

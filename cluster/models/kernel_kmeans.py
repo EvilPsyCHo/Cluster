@@ -6,7 +6,6 @@
 import numpy as np
 from sklearn.metrics import pairwise
 from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
 
 
 __all__ = ["KernelKMeans", "KMeans"]
