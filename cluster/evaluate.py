@@ -35,13 +35,11 @@ def adjusted_mutual_info_score_matrix(*args):
 
 def _score_matrix(*args, evaluate_function):
     """
-
     Args:
         *args: list<list<string>>, shape=(n_cluster, n_sample), string denote the cluster_label
         evaluate_function: callable function
     Returns:
         score_matrix: ndarray
-
     """
     size = len(args[0])
     assert size >= 2, 'clusters must more than 2'
