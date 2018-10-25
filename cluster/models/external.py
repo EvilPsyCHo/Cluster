@@ -5,6 +5,12 @@
 
 # Based on Partition Cluster Models
 from sklearn.cluster import KMeans, MiniBatchKMeans, AffinityPropagation, SpectralClustering
+from sklearn.cluster import Birch
+from sklearn.cluster import DBSCAN, MeanShift
+from sklearn.mixture import GaussianMixture
 
 
-__all__ = ["KMeans", "MiniBatchKMeans", "AffinityPropagation", "SpectralClustering"]
+__all__ = [
+    # 基于划分
+    "KMeans", "MiniBatchKMeans", "AffinityPropagation", "SpectralClustering",
+    "Birch", "DBSCAN", "MeanShift", "GaussianMixture"]

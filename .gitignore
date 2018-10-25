@@ -1,2 +1,4 @@
 .idea
+.ipynb_checkpoints
+.wyny
 __pycache__

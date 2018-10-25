@@ -9,10 +9,12 @@ from matplotlib import cm
 
 
 def plot_cluster_sequence(cluster_labels, sequence_index, ax):
+    label_interval = int(len(sequence_index) / 20)
     ax.imshow(pd.get_dummies(cluster_labels), aspect="auto", cmap='Greys')
-    ax.set_yticks(range(0, len(sequence_index), 20))
-    ax.set_yticklabels(sequence_index[np.array(range(0, len(sequence_index), 20))].tolist())
+    ax.set_yticks(range(0, len(sequence_index), label_interval))
+    ax.set_yticklabels(sequence_index[np.array(range(0, len(sequence_index), label_interval))].tolist())
     ax.set_title("Sequence of Cluster labels")
+    return ax
 
 
 def plot_cluster_dim_reduction(X, cluster_labels, ax, dim_reduction=PCA(2)):
@@ -26,3 +28,4 @@ def plot_cluster_dim_reduction(X, cluster_labels, ax, dim_reduction=PCA(2)):
         ax.scatter(x[cluster_labels == c, 0], x[cluster_labels == c, 1], c=cm.brg(c/n), label=c)
     ax.set_title("Cluster Dimension Reduction")
     ax.legend()
+    return ax

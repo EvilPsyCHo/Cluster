@@ -1,5 +1,6 @@
 # coding:utf8
 # @Time    : 18-10-16 下午1:42
-# @Author  : evilpsycho
+# @Author  : Zhirui Zhou
 # @Mail    : evilpsycho42@gmail.com
-from external import *
+
+__version__ = '0.1.0'

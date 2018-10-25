@@ -68,3 +68,5 @@ An interface-friendly and high-performance cluster analysis framework.
 
 [[5] Subspace clustering for high dimensional data: a review, L Parsons, E Haque, H Liu- Acm Sigkdd Explorations Newsletter, 2004](https://dl.acm.org/citation.cfm?id=1007731)
 
+[[6] Large-scale cluster management at Google with Borg, A Verma - Proceedings of the …, 2015](https://dl.acm.org/citation.cfm?id=2741964)
+
