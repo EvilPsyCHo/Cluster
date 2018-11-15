@@ -17,15 +17,20 @@ def plot_cluster_sequence(cluster_labels, sequence_index, ax):
     return ax
 
 
-def plot_cluster_dim_reduction(X, cluster_labels, ax, dim_reduction=PCA(2)):
+def plot_cluster_2d(X, cluster_labels, ax, **kwargs):
     dim = X.shape[1]
     x = X.copy()
     n = np.unique(cluster_labels).size
     assert dim >= 2
     if dim != 2:
-        x = dim_reduction.fit_transform(x)
+        x = PCA(2).fit_transform(x)
     for c in np.unique(cluster_labels):
-        ax.scatter(x[cluster_labels == c, 0], x[cluster_labels == c, 1], c=cm.brg(c/n), label=c)
-    ax.set_title("Cluster Dimension Reduction")
+        ax.scatter(
+            x[cluster_labels == c, 0],
+            x[cluster_labels == c, 1],
+            c=cm.brg(c/n),
+            label=c,
+            **kwargs,
+        )
     ax.legend()
     return ax

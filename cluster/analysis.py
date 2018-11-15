@@ -7,7 +7,7 @@ import pandas as pd
 
 
 def transition_probability_matrix(sequence):
-    """聚类标签具有时间序列属性的标签转移概率矩阵计算
+    """计算聚类标签在时间序列上的转移概率矩阵
 
     Args:
         sequence: array like
@@ -19,7 +19,6 @@ def transition_probability_matrix(sequence):
     states = list(set(sequence))
     states.sort()
     states2id = {s: idx for idx, s in enumerate(states)}
-    id2states = {v: k for k, v in states2id.items()}
     m = np.zeros([len(states), len(states)])
     for i in range(size - 1):
         m[states2id[sequence[i]], states2id[sequence[i + 1]]] += 1

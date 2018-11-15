@@ -14,10 +14,10 @@ warnings.filterwarnings('ignore')
 __all__ = [
     'adjusted_rand_score',  # 调整兰德系数
     'adjusted_rand_score_matrix',  # 调整兰德系数矩阵
-    'adjusted_mutual_info_score',
-    'adjusted_mutual_info_score_matrix',  #
-    'homogeneity_score',
-    'completeness_score',
+    'adjusted_mutual_info_score',  # 调整互信息
+    'adjusted_mutual_info_score_matrix',  # 调整互信息矩阵
+    'homogeneity_score',  # 同质系数
+    'completeness_score',  #
     'v_measure_score',
     'fowlkes_mallows_score',
     'silhouette_score',

@@ -1,4 +1,7 @@
 .idea
 .ipynb_checkpoints
 .wyny
-__pycache__
+.__pycache__
+.dist
+.*egg-info
+.build

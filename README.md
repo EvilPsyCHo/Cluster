@@ -58,7 +58,7 @@ An interface-friendly and high-performance cluster analysis framework.
 
 ## Reference
 
-[[1] A comprehensive Survey of Clustering Algorithms, Rui Xu, 2015]()
+[[1] A comprehensive Survey of Clustering Algorithms, Rui Xu, 2015](https://link.springer.com/article/10.1007/s40745-015-0040-1)
 
 [[2] Survey of Clustering Algorithms, Rui Xu, 2005]()
 

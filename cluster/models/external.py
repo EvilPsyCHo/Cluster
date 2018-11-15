@@ -8,9 +8,11 @@ from sklearn.cluster import KMeans, MiniBatchKMeans, AffinityPropagation, Spectr
 from sklearn.cluster import Birch
 from sklearn.cluster import DBSCAN, MeanShift
 from sklearn.mixture import GaussianMixture
+from sklearn.metrics import euclidean_distances
 
 
 __all__ = [
     # 基于划分
     "KMeans", "MiniBatchKMeans", "AffinityPropagation", "SpectralClustering",
-    "Birch", "DBSCAN", "MeanShift", "GaussianMixture"]
+    "Birch", "DBSCAN", "MeanShift", "GaussianMixture",
+]
